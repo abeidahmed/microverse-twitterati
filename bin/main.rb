@@ -10,4 +10,5 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV['TWITTER_TOKEN_SECRET']
 end
 
-client.update('Hello world')
+client.update('hello world another time')
+
