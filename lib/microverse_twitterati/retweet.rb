@@ -20,6 +20,8 @@ module MicroverseTwitterati
       end
     end
 
+    private
+
     def bot_followers
       client.follower_ids
     end
