@@ -2,7 +2,7 @@ require_relative 'errors'
 
 module MicroverseTwitterati
   class ValidSetting
-    ACCEPTED_KEYS = %i[consumer_key consumer_secret access_token access_token_secret].freeze
+    ACCEPTED_KEYS = %i[consumer_key consumer_secret access_token access_token_secret hash_tag twitter_handle].freeze
 
     def initialize(options)
       raise NotAHash unless options.is_a?(Hash)

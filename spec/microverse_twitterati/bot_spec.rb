@@ -34,7 +34,7 @@ RSpec.describe MicroverseTwitterati::Bot do
       expect(bot.instance_variable_get(:@tweets)).to match_array([])
     end
 
-    it 'should raise error if unwanted key value pairs are passed in the api_settings hash' do
+    it 'should raise error if unwanted api_settings are passed in the api_settings hash' do
       expect { MicroverseTwitterati::Bot.new(api_settings.merge({ fake: 'fake' }), user_settings) }.to raise_error(
         MicroverseTwitterati::UndefinedHashPair
       )
