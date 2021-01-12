@@ -13,14 +13,18 @@ module MicroverseTwitterati
     end
 
     def retweet!
-      bot_followers.each do |follower_id|
-        client.user_timeline(follower_id, result_type: 'recent').each do |tweet|
-          client.retweet(tweet.id) if tweet.text.include? HASH_TAG
-        end
+      loop_over_followers_tweets do |tweet|
+        client.retweet(tweet.id) if tweet.text.include? HASH_TAG
       end
     end
 
     private
+
+    def loop_over_followers_tweets(&block)
+      bot_followers.each do |follower_id|
+        client.user_timeline(follower_id, result_type: 'recent').each(&block)
+      end
+    end
 
     def bot_followers
       client.follower_ids
