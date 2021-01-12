@@ -1,3 +1,4 @@
+# rubocop:disable all
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
@@ -68,3 +69,4 @@ guard :rspec, cmd: "bundle exec rspec" do
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
 end
+# rubocop:enable all
