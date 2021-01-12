@@ -70,4 +70,12 @@ RSpec.describe MicroverseTwitterati::Bot do
       end
     end
   end
+
+  describe '#syndicate_for' do
+    it 'retweets the tweets' do
+      VCR.use_cassette('syndicate_for') do
+        expect(bot.syndicate_for(['1348933345351122944'])).to be_truthy
+      end
+    end
+  end
 end
