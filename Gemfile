@@ -6,3 +6,4 @@ gem 'rspec', '~> 3.10'
 gem 'rubocop', require: false
 gem 'twitter', '~> 7.0'
 gem 'vcr', '~> 6.0'
+gem 'webmock', '~> 3.11'
