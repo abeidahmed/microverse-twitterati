@@ -12,7 +12,14 @@ RSpec.describe MicroverseTwitterati::Bot do
     }
   end
 
-  let(:bot) { MicroverseTwitterati::Bot.new(api_settings) }
+  let(:user_settings) do
+    {
+      twitter_handle: 'MicroverseB',
+      hash_tag: '#microverse'
+    }
+  end
+
+  let(:bot) { MicroverseTwitterati::Bot.new(api_settings, user_settings) }
 
   describe '#initialize' do
     it 'should set @last_tweet_send_id to nil' do
@@ -28,9 +35,17 @@ RSpec.describe MicroverseTwitterati::Bot do
     end
 
     it 'should raise error if unwanted key value pairs are passed in the api_settings hash' do
-      expect { MicroverseTwitterati::Bot.new(api_settings.merge({ fake: 'fake' })) }.to raise_error(
+      expect { MicroverseTwitterati::Bot.new(api_settings.merge({ fake: 'fake' }), user_settings) }.to raise_error(
         MicroverseTwitterati::UndefinedHashPair
       )
+    end
+
+    it 'should set @twitter_handle' do
+      expect(bot.instance_variable_get(:@twitter_handle)).to eq(user_settings[:twitter_handle])
+    end
+
+    it 'should set the @hash_tag' do
+      expect(bot.instance_variable_get(:@hash_tag)).to eq(user_settings[:hash_tag])
     end
   end
 
