@@ -10,11 +10,34 @@ module MicroverseTwitterati
       @tweets = []
     end
 
+    def run!
+      @last_tweet_sent_id = find_where_we_left_off
+      @search_results = collect_tweets
+      @tweets = process_tweets_for(@search_results)
+      syndicate_for(@tweets)
+    end
+
+    def find_where_we_left_off
+      t = user_timeline('MicroverseB').first
+      r = retweeted_by_me.first
+      t.created_at > r.created_at ? t.id : r.id
+    end
+
+    def collect_tweets
+      search('#microverse', result_type: 'recent', since_id: @last_tweet_sent_id, rpp: 50)
+    end
+
     def process_tweets_for(search_results)
       tweets = []
       search_results.each { |tweet| tweets << tweet }
 
       tweets
+    end
+
+    def syndicate_for(tweets)
+      tweets.each do |tweet|
+        retweet(extract_id(tweet))
+      end
     end
   end
 end
