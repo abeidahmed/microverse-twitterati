@@ -23,9 +23,9 @@ module MicroverseTwitterati
     end
 
     def find_last_retweeted
-      t = user_timeline(twitter_handle).first
-      r = retweeted_by_me.first
-      t.created_at > r.created_at ? t.id : r.id
+      tweet = user_timeline(twitter_handle).first
+      retweet = retweeted_by_me.first
+      tweet.created_at > retweet.created_at ? tweet.id : retweet.id
     end
 
     def collect_tweets
