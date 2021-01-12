@@ -10,4 +10,9 @@ TWITTER_API_SETTINGS = {
   access_token_secret: ENV['TWITTER_TOKEN_SECRET']
 }.freeze
 
-MicroverseTwitterati::Bot.new(TWITTER_API_SETTINGS).run!
+USER_SETTINGS = {
+  twitter_handle: 'MicroverseB',
+  hash_tag: '#microverse'
+}.freeze
+
+MicroverseTwitterati::Bot.new(TWITTER_API_SETTINGS, USER_SETTINGS).run!
