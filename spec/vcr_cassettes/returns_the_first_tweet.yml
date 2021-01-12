@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - Basic Og==
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 06:53:09 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 06:53:09 GMT
+      Ml:
+      - S
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043438973783155; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        06:53:09 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_GPnSZEWVcZeKUcT10RiRBg=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 06:53:09 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 0b139d60941cb0ed55f198f993e14188
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '179'
+      X-Transaction:
+      - 006a08440055cca0
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":99,"message":"Unable to verify your credentials","label":"authenticity_token_error"}]}'
+  recorded_at: Tue, 12 Jan 2021 06:53:10 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=MicroverseB
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - 'Bearer '
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Connection:
+      - close
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 06:53:10 GMT
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043439023987141; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        06:53:10 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_k+xJuTNoFntqiXUQBhf04A=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 06:53:10 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 2e5cbb161389ad1f0aba3010e6b0510a
+      X-Response-Time:
+      - '182'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":215,"message":"Bad Authentication data."}]}'
+  recorded_at: Tue, 12 Jan 2021 06:53:10 GMT
+recorded_with: VCR 6.0.0
