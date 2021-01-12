@@ -4,6 +4,7 @@ AllCops:
     - 'Rakefile'
 
   DisplayCopNames: true
+  NewCops: enable
 
 Layout/LineLength:
   Max: 120
