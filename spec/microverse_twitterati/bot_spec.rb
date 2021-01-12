@@ -49,6 +49,14 @@ RSpec.describe MicroverseTwitterati::Bot do
     end
   end
 
+  describe '#run!' do
+    it 'has to be an instance of an Array' do
+      VCR.use_cassette('run!') do
+        expect(bot.run!).to be_a(Array)
+      end
+    end
+  end
+
   describe '#process_tweets_for' do
     it 'should shovel the args in an array and return the array' do
       expect(bot.process_tweets_for(['hello world'])).to eq(['hello world'])
