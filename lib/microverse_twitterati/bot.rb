@@ -30,6 +30,10 @@ module MicroverseTwitterati
 
     def collect_tweets
       search(hash_tag, result_type: 'recent', since_id: @last_tweet_sent_id, rpp: 50)
+    rescue Twitter::Error::ServiceUnavailable
+      abort 'Service is currently unavailable.'
+    rescue Faraday::Error::ConnectionFailed
+      abort 'There seems to be a connection problem.'
     end
 
     def process_tweets_for(search_results)
