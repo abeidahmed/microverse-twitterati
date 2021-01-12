@@ -10,7 +10,7 @@ module MicroverseTwitterati
       @options = options
     end
 
-    def check_valid_keys
+    def valid_setting?
       options.each_key do |key|
         return false unless ACCEPTED_KEYS.include?(key)
       end
