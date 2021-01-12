@@ -40,9 +40,7 @@ module MicroverseTwitterati
     end
 
     def syndicate_for(tweets)
-      tweets.each do |tweet|
-        retweet(extract_id(tweet))
-      end
+      tweets.each { |tweet| retweet(extract_id(tweet)) }
     end
 
     private
