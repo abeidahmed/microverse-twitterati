@@ -1,13 +1,15 @@
+require 'dotenv/load'
+require 'byebug'
 require_relative '../spec_helper'
 require_relative '../../lib/microverse_twitterati/bot'
 
 RSpec.describe MicroverseTwitterati::Bot do
   let(:api_settings) do
     {
-      consumer_key: 'fake_consumer_key',
-      consumer_secret: 'fake_consumer_secret_key',
-      access_token: 'fake_access_token',
-      access_token_secret: 'fake_access_token_secret'
+      consumer_key: ENV['TWITTER_API_KEY'],
+      consumer_secret: ENV['TWITTER_SECRET_KEY'],
+      access_token: ENV['TWITTER_ACCESS_TOKEN'],
+      access_token_secret: ENV['TWITTER_TOKEN_SECRET']
     }
   end
 
@@ -30,6 +32,14 @@ RSpec.describe MicroverseTwitterati::Bot do
   describe 'process_tweets_for' do
     it 'should shovel the args in an array and return the array' do
       expect(bot.process_tweets_for(['hello world'])).to eq(['hello world'])
+    end
+  end
+
+  describe '#find_last_retweeted' do
+    it 'returns a tweet id' do
+      VCR.use_cassette('find_last_retweeted') do
+        expect(bot.find_last_retweeted).to be_a(Integer)
+      end
     end
   end
 end
