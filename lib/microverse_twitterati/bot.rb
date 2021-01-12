@@ -9,6 +9,12 @@ module MicroverseTwitterati
       @search_results = []
       @tweets = []
     end
+
+    def process_tweets_for(search_results)
+      tweets = []
+      search_results.each { |tweet| tweets << tweet }
+
+      tweets
+    end
   end
 end
-
