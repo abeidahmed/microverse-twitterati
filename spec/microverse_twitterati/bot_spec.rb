@@ -42,4 +42,12 @@ RSpec.describe MicroverseTwitterati::Bot do
       end
     end
   end
+
+  describe '#collect_tweets' do
+    it 'collects all the tweets marked with hash_tag' do
+      VCR.use_cassette('collect_tweets') do
+        expect(bot.collect_tweets).to be_a(Twitter::SearchResults)
+      end
+    end
+  end
 end
