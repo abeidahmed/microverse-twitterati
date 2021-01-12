@@ -16,7 +16,37 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'webmock/rspec'
 require 'vcr'
-#
+
+WebMock.disable_net_connect!(allow_localhost: true)
+
+serializer = Object.new
+serializer.instance_eval do
+  def file_extension
+    "json"
+  end
+  def serialize(hash)
+    JSON.pretty_generate(hash)
+  end
+  def deserialize(string)
+    JSON.parse(string)
+  end
+end
+
+VCR.configure do |config|
+  config.preserve_exact_body_bytes do |http_message|
+    http_message.body.encoding.name == 'ASCII-8BIT' || !http_message.body.valid_encoding?
+  end
+
+  config.before_record do |i|
+    i.request.headers.delete("Authorization")
+  end
+
+  config.cassette_serializers[:basic_json] = serializer
+  config.default_cassette_options = { :serialize_with => :basic_json }
+  config.cassette_library_dir = 'spec/vcr_cassettes'
+  config.hook_into :webmock
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -101,10 +131,5 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-end
-
-VCR.configure do |config|
-  config.cassette_library_dir = 'spec/vcr_cassettes'
-  config.hook_into :webmock
 end
 # rubocop:enable all
