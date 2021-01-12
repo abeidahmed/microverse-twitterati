@@ -11,13 +11,13 @@ module MicroverseTwitterati
     end
 
     def run!
-      @last_tweet_sent_id = find_where_we_left_off
+      @last_tweet_sent_id = find_last_retweeted
       @search_results = collect_tweets
       @tweets = process_tweets_for(@search_results)
       syndicate_for(@tweets)
     end
 
-    def find_where_we_left_off
+    def find_last_retweeted
       t = user_timeline('MicroverseB').first
       r = retweeted_by_me.first
       t.created_at > r.created_at ? t.id : r.id
