@@ -1,5 +1,3 @@
-require 'dotenv/load'
-require 'byebug'
 require_relative '../spec_helper'
 require_relative '../../lib/microverse_twitterati/bot'
 
