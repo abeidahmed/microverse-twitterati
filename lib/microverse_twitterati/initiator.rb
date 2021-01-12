@@ -11,7 +11,7 @@ module MicroverseTwitterati
     def find_last_retweeted
       tweeter = client.user_timeline('MicroverseB').first
       retweeted = client.home_timeline.first
-      (tweeter.created_at > retweeted.created_at) ? tweeter.id : retweeted.id
+      tweeter.created_at > retweeted.created_at ? tweeter.id : retweeted.id
     end
 
     def initialize_retweet
