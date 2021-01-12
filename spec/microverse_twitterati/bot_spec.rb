@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
 require './lib/microverse_twitterati/errors'
-require_relative '../../lib/microverse_twitterati/bot'
+require './lib/microverse_twitterati/bot'
 
 RSpec.describe MicroverseTwitterati::Bot do
   let(:api_settings) do
