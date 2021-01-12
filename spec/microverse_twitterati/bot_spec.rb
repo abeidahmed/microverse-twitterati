@@ -49,7 +49,7 @@ RSpec.describe MicroverseTwitterati::Bot do
     end
   end
 
-  describe 'process_tweets_for' do
+  describe '#process_tweets_for' do
     it 'should shovel the args in an array and return the array' do
       expect(bot.process_tweets_for(['hello world'])).to eq(['hello world'])
     end
