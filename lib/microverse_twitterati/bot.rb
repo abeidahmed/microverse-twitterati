@@ -4,7 +4,7 @@ require_relative 'valid_setting'
 module MicroverseTwitterati
   class Bot < Twitter::REST::Client
     def initialize(twitter_api_settings, user_settings)
-      raise UndefinedHashPair unless ValidSetting.new(twitter_api_settings.merge(user_settings)).valid_setting?
+      raise UndefinedHashPair unless ValidSetting.new(twitter_api_settings.merge(user_settings)).permitted?
 
       super(twitter_api_settings)
 

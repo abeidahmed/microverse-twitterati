@@ -11,17 +11,17 @@ RSpec.describe MicroverseTwitterati::ValidSetting do
     end
   end
 
-  describe '#valid_setting?' do
+  describe '#permitted?' do
     it 'should return true if the keys are valid' do
       setting = MicroverseTwitterati::ValidSetting.new(valid_hash)
 
-      expect(setting.valid_setting?).to be_truthy
+      expect(setting.permitted?).to be_truthy
     end
 
     it 'should return false if the keys are invalid' do
       setting = MicroverseTwitterati::ValidSetting.new(invalid_hash)
 
-      expect(setting.valid_setting?).to be_falsy
+      expect(setting.permitted?).to be_falsy
     end
   end
 end
