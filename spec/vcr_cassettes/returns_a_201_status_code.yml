@@ -1,0 +1,579 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="6cd74c6aec6f5198f1ff955c63514836",
+        oauth_signature="lym8OrXmmUrCqx2zwQP%2FxexBTLs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438803", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:06:44 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:06:44 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043880415252635; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:06:44 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_6OlonMhYFka469u242HRew=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:06:44 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-App-Rate-Limit-Limit:
+      - '100000'
+      X-App-Rate-Limit-Remaining:
+      - '99999'
+      X-App-Rate-Limit-Reset:
+      - '1610525204'
+      X-Connection-Hash:
+      - 446ab6c1c57af2b11f0f3d0023e031f8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '899'
+      X-Rate-Limit-Reset:
+      - '1610439704'
+      X-Response-Time:
+      - '207'
+      X-Transaction:
+      - '0095b482009e6351'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:06:44 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="da551528959ce7c6f8f5b721c98317ec",
+        oauth_signature="Gsm8k79fGZbjNSgEMm8czx%2B8dY4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438821", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:07:01 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:07:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043882151829155; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:07:01 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_9BZlHZpIc/2TPtKuaQ2o6g=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:07:01 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-App-Rate-Limit-Limit:
+      - '100000'
+      X-App-Rate-Limit-Remaining:
+      - '99998'
+      X-App-Rate-Limit-Reset:
+      - '1610525204'
+      X-Connection-Hash:
+      - 7a90d1a23fc03464ea93c996a79a68dd
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '898'
+      X-Rate-Limit-Reset:
+      - '1610439704'
+      X-Response-Time:
+      - '212'
+      X-Transaction:
+      - 000327bd00b04628
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:07:01 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="7ac5a656841497c3cb6c987e5c613c90",
+        oauth_signature="zXCq%2BrOkSXKe50%2BgmLj%2FmLuy74U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438956", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:09:16 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:09:16 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043895656286883; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:09:16 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_RkRl8BAqw/qfUKaaMEv+xQ=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:09:16 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-App-Rate-Limit-Limit:
+      - '100000'
+      X-App-Rate-Limit-Remaining:
+      - '99997'
+      X-App-Rate-Limit-Reset:
+      - '1610525204'
+      X-Connection-Hash:
+      - 33bb1ba768304273310fab68b684609f
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '897'
+      X-Rate-Limit-Reset:
+      - '1610439704'
+      X-Response-Time:
+      - '203'
+      X-Transaction:
+      - '0081c500000a3171'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:09:16 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/home_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="da9e4445b58cd0548566317779667967",
+        oauth_signature="IEjoPdmLtvtxKy09yyABIpG593w%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438969", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:09:29 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:09:29 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043896975722971; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:09:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_eTSa/6JOZBflpiVbLBmdNA=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:09:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 5307f6cbdc1eaf426f5f2bd5d40a15e5
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1610439869'
+      X-Response-Time:
+      - '207'
+      X-Transaction:
+      - 002df9df0064a8d1
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:09:29 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/home_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="811420fee1ca6e2ab6a15435f3f60fee",
+        oauth_signature="WVgWYR3c%2FVRGCY%2F4%2Fy%2Fo81muj7o%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438976", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:09:37 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:09:37 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043897718426211; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:09:37 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_K0XJgsB/o1BXtptXTq+zxA=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:09:37 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - e4777d16c868c62e12cbf9100399b2ae
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '13'
+      X-Rate-Limit-Reset:
+      - '1610439869'
+      X-Response-Time:
+      - '201'
+      X-Transaction:
+      - 0057e987008c4742
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:09:37 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/home_timeline.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="79b956531d71981d834e9ca9a0f16075",
+        oauth_signature="mhGl3rnZGnoiEcET6n0bvEBMGHg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610438985", oauth_token="1348859575106031617-1tZYpG2G5e8W6vkwJUNS1EiCks9Ssl",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '5501'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 08:09:45 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 08:09:45 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161043898586029876; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        08:09:45 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_JAn7MkYv9SD5vS3q6U+pQA=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 08:09:45 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 3c4d1ccf1bb39c42349b12a2faafb3c4
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '12'
+      X-Rate-Limit-Reset:
+      - '1610439869'
+      X-Response-Time:
+      - '205'
+      X-Transaction:
+      - 00dcb65300dca932
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 07:57:30 +0000 2021","id":1348901906383425540,"id_str":"1348901906383425540","text":"Is
+        it working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 06:11:03 +0000 2021","id":1348875119347683339,"id_str":"1348875119347683339","text":"hello
+        world another time","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 05:45:45 +0000 2021","id":1348868749214969856,"id_str":"1348868749214969856","text":"Hello
+        world","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":3,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 08:09:45 GMT
+recorded_with: VCR 6.0.0
