@@ -1,8 +1,11 @@
 require 'twitter'
+require_relative 'valid_setting'
 
 module MicroverseTwitterati
   class Bot < Twitter::REST::Client
     def initialize(twitter_api_settings)
+      raise UndefinedHashPair unless ValidSetting.new(twitter_api_settings).valid_setting?
+
       super(twitter_api_settings)
 
       @last_tweet_sent_id = nil

@@ -1,4 +1,5 @@
 require_relative '../spec_helper'
+require './lib/microverse_twitterati/errors'
 require_relative '../../lib/microverse_twitterati/bot'
 
 RSpec.describe MicroverseTwitterati::Bot do
@@ -24,6 +25,12 @@ RSpec.describe MicroverseTwitterati::Bot do
 
     it 'should set @tweets to an empty array' do
       expect(bot.instance_variable_get(:@tweets)).to match_array([])
+    end
+
+    it 'should raise error if unwanted key value pairs are passed in the api_settings hash' do
+      expect { MicroverseTwitterati::Bot.new(api_settings.merge({ fake: 'fake' })) }.to raise_error(
+        MicroverseTwitterati::UndefinedHashPair
+      )
     end
   end
 
