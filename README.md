@@ -85,8 +85,8 @@ Contributions are welcome, and any new features should be built in a
 separate branch.
 
 ## Acknowledgements
-To all the awesome `ruby` gems out there that have made our lives simple
-and pain free.
+To all the awesome `ruby` gems out there that have made our lives
+easier.
 
 ## License
 Copyright 2021 Abeid Ahmed. Licensed under [MIT](https://opensource.org/licenses/MIT)
