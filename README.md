@@ -69,7 +69,7 @@ project, please message me on Slack(Abeid Ahmed) to obtain the keys.
 
 ## Test
 - Run `bundle exec guard` to run the test automatically when the file
-  changes.
+  changes or run `bundle exec rspec` to run all the tests.
 - Make sure you add the keys with the help of the above instructions
   before you run the test. Otherwise it will fail.
 
