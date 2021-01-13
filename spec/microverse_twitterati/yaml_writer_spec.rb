@@ -2,16 +2,19 @@ require_relative '../spec_helper'
 require './lib/microverse_twitterati/yaml_writer'
 
 RSpec.describe MicroverseTwitterati::YamlWriter do
-  FILE_PATH = 'config/helloworld.yml'
-  let(:writer) { MicroverseTwitterati::YamlWriter.new(
-    FILE_PATH,
-    type: 'blocked',
-    add: 'user 1'
-  ) }
+  file_path = 'config/helloworld.yml'.freeze
+
+  let(:writer) do
+    MicroverseTwitterati::YamlWriter.new(
+      file_path,
+      type: 'blocked',
+      add: 'user 1'
+    )
+  end
 
   describe '#initialize' do
     it 'sets the @file_path' do
-      expect(writer.instance_variable_get(:@file_path)).to eq(FILE_PATH)
+      expect(writer.instance_variable_get(:@file_path)).to eq(file_path)
     end
 
     it 'sets the @type' do
@@ -25,37 +28,36 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
 
   describe '#write!' do
     before do
-      File.open(FILE_PATH, 'w') {}
+      File.open(file_path, 'w') { |file| file.truncate(0) }
     end
     it 'creates a new file if the file is not present' do
       writer.write!
 
-      expect(File.exist? FILE_PATH).to be_truthy
+      expect(File.exist?(file_path)).to be_truthy
     end
 
     it 'instantiates the document' do
       writer.write!
-      doc = YAML.load_file(FILE_PATH)
+      doc = YAML.load_file(file_path)
 
       expect(doc).to be_truthy
     end
 
     it 'sets the blocked to empty array' do
       writer.write!
-      doc = YAML.load_file(FILE_PATH)
+      doc = YAML.load_file(file_path)
 
       expect(doc['blocked']).to match_array(['user 1'])
     end
 
     it 'does not initializes the file again' do
       doc = MicroverseTwitterati::YamlWriter.new(
-        FILE_PATH,
+        file_path,
         type: 'blocked',
         add: 'user 2'
       )
-      doc.write!
-      doc.write!
-      file = YAML.load_file(FILE_PATH)
+      2.times { doc.write! }
+      file = YAML.load_file(file_path)
 
       expect(file['blocked']).to match_array(['user 2', 'user 2'])
     end

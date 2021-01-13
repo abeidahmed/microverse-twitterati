@@ -1,5 +1,3 @@
-require 'byebug'
-
 module MicroverseTwitterati
   class YamlWriter
     def initialize(file_path, type:, add:)
@@ -13,6 +11,7 @@ module MicroverseTwitterati
 
       @doc = YAML.load_file(file_path)
 
+      # rubocop:disable Style/IdenticalConditionalBranches
       if doc_initialized_with_type
         add_element
       elsif doc_initialized_with_no_type
@@ -23,6 +22,7 @@ module MicroverseTwitterati
         init_type
         add_element
       end
+      # rubocop:enable Style/IdenticalConditionalBranches
 
       File.open(file_path, 'w') { |file| file.write @doc.to_yaml }
     end
