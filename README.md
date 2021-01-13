@@ -46,6 +46,16 @@ itself. By making this optimization, the bot ran within 3 seconds.
 - Run `git checkout -b feature-retweet`
 - Run `git pull origin feature-retweet`
 - Run `bundle install`
+- Make sure you get your `.env` files configured. The app will not work
+  without it.
+```json
+TWITTER_API_KEY=your_api_key
+TWITTER_SECRET_KEY=your_secret_key
+TWITTER_BEARER_TOKEN=your_bearer_token
+TWITTER_ACCESS_TOKEN=your_access_token
+TWITTER_TOKEN_SECRET=your_token_secret
+```
+The keys can be found [here](https://developer.twitter.com)
 
 After cloning the repo and setting up, please go to your twitter account
 and tweet anything that you'd like, but please make sure to hashtag the
