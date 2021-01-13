@@ -11,6 +11,10 @@ order.
 ## Built with
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
 
+## Twitter bot
+The bot can be found at [twitter](https://twitter.com/MicroverseB).
+Please follow the bot if possible. Cheers!
+
 ## Features
 ### Optimizations
 - Since the twitter api does rate limiting, I had to be cautious when
