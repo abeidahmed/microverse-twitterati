@@ -24,7 +24,7 @@ go. Blocking users is possible.
 retweeting the previous tweets since the user was blocked.
 - This feature had to optimized because of twitter's rate limiting. For
   example, if the block list is 5000, we cannot request the `api` 5000
-times, everytime we try to run the tweet. So I had to store the blocked
+times, everytime we try to run the app. So I had to store the blocked
 users in a `yml` file and check if the user is blocked or not from the file
 itself. By making this optimization, the bot ran within 3 seconds.
 
