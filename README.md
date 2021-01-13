@@ -55,7 +55,8 @@ Paste all the configurations in the `bin/main.rb` file.
 - `cd` into the directory
 - Run `git checkout -b feature-retweet`
 - Run `git pull origin feature-retweet`
-- Run `bin/main.rb`
+- Run `bundle install`
+- Run `bin/main.rb` or run `rake bot`
 
 ## Test
 - Run `bundle exec guard` to run the test automatically when the file
