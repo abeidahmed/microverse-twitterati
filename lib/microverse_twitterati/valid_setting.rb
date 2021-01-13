@@ -11,11 +11,7 @@ module MicroverseTwitterati
     end
 
     def permitted?
-      options.each_key do |key|
-        return false unless ACCEPTED_KEYS.include?(key)
-      end
-
-      true
+      (options.keys - ACCEPTED_KEYS).empty?
     end
 
     private
