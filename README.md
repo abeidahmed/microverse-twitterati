@@ -8,6 +8,9 @@ project. It is a command line bot that when run, iterates through the
 tweets that are hash tagged with `#microverse` and retweets them in
 order.
 
+## Built with
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
+
 ## Features
 ### Optimizations
 - Since the twitter api does rate limiting, I had to be cautious when
