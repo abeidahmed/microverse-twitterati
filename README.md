@@ -46,7 +46,15 @@ itself. By making this optimization, the bot ran within 3 seconds.
 - Run `git checkout -b feature-retweet`
 - Run `git pull origin feature-retweet`
 - Run `bundle install`
+
+After cloning the repo and setting up, please go to your twitter account
+and tweet anything that you'd like, but please make sure to hashtag the
+tweet with `#microverse`.
+Then you can run the bot using the step:
 - Run `bin/main.rb` or run `rake bot`
+After that check out the tweets retweets section, it will automatically
+be retweeted.
+
 
 ## Test
 - Run `bundle exec guard` to run the test automatically when the file
