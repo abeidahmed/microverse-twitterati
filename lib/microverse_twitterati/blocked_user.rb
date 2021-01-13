@@ -9,10 +9,10 @@ module MicroverseTwitterati
 
     def initialize
       @doc = YamlWriter.new(FILE_PATH, type: CATEGORY)
-      @doc.reset
     end
 
     def block(users)
+      @doc.reset
       users.each { |user| doc.write(user) }
     end
 

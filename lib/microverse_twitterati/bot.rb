@@ -40,7 +40,9 @@ module MicroverseTwitterati
 
     def process_tweets_for(search_results)
       tweets = []
-      search_results.each { |tweet| tweets << tweet }
+      search_results.each do |tweet|
+        tweets << tweet unless blocked?(tweet.user)
+      end
 
       tweets
     end
@@ -55,6 +57,10 @@ module MicroverseTwitterati
     end
 
     private
+
+    def blocked?(user)
+      BlockedUser.new.blocked_users.include?(user.id)
+    end
 
     attr_reader :hash_tag, :twitter_handle
   end

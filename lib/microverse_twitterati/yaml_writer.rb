@@ -1,3 +1,5 @@
+require 'yaml'
+
 module MicroverseTwitterati
   class YamlWriter
     def initialize(file_path, type:)
@@ -27,8 +29,17 @@ module MicroverseTwitterati
     end
 
     def read
-      doc = YAML.load_file(file_path)
-      doc[type]
+      @doc = YAML.load_file(file_path)
+
+      if doc_initialized_with_type
+      elsif doc_initialized_with_no_type
+        init_type
+      else
+        init_doc
+        init_type
+      end
+
+      @doc[type]
     end
 
     def reset
