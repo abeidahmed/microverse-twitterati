@@ -50,7 +50,7 @@ module MicroverseTwitterati
     private
 
     def process_tweets_for(search_results)
-      search_results.select { |tweet| !blocked?(tweet.user) }
+      search_results.reject { |tweet| blocked?(tweet.user) }
     end
 
     def blocked?(user)
