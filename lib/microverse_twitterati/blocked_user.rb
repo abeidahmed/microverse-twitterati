@@ -12,7 +12,7 @@ module MicroverseTwitterati
     end
 
     def block(users)
-      @doc.reset
+      doc.reset
       users.each { |user| doc.write(user) }
     end
 
