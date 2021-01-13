@@ -30,14 +30,17 @@ module MicroverseTwitterati
 
     def read
       @doc = YAML.load_file(file_path)
+      return @doc[type] if doc_initialized_with_type
 
-      if doc_initialized_with_type
-      elsif doc_initialized_with_no_type
+      # rubocop:disable Style/IdenticalConditionalBranches
+      # This logic needs to happen for the writer to work properly
+      if doc_initialized_with_no_type
         init_type
       else
         init_doc
         init_type
       end
+      # rubocop:enable Style/IdenticalConditionalBranches
 
       @doc[type]
     end

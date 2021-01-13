@@ -17,14 +17,14 @@ RSpec.describe MicroverseTwitterati::BlockedUser do
   describe '#block' do
     it 'blocks the user' do
       users = %w[mma hello world]
-      block = blocked.block(users)
+      blocked.block(users)
 
       expect(blocked.doc.read).to match_array(users)
     end
 
     it 'does not block the user multiple times' do
       users = %w[hello bye]
-      block = blocked.block(users)
+      blocked.block(users)
 
       expect(blocked.doc.read).to match_array(%w[hello bye])
     end

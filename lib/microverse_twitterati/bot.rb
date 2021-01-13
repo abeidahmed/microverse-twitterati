@@ -52,7 +52,7 @@ module MicroverseTwitterati
     end
 
     def update_blocked_users
-      list = blocked_ids.collect { |id| id.to_s }
+      list = blocked_ids.collect(&:to_s)
       BlockedUser.new.block(list)
     end
 
