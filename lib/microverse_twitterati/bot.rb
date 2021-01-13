@@ -1,5 +1,6 @@
 require 'twitter'
 require_relative 'valid_setting'
+require_relative 'blocked_user'
 
 module MicroverseTwitterati
   class Bot < Twitter::REST::Client
@@ -16,6 +17,7 @@ module MicroverseTwitterati
     end
 
     def run!
+      update_blocked_users
       @last_tweet_sent_id = find_last_retweeted
       @search_results = collect_tweets
       @tweets = process_tweets_for(@search_results)
@@ -45,6 +47,11 @@ module MicroverseTwitterati
 
     def syndicate_for(tweets)
       tweets.each { |tweet| retweet(extract_id(tweet)) }
+    end
+
+    def update_blocked_users
+      list = blocked_ids.collect { |id| id.to_s }
+      BlockedUser.new.block(list)
     end
 
     private
