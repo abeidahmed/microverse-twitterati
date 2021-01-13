@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '3.0.0'
-
 gem 'byebug', '~> 11.1', '>= 11.1.3'
 gem 'dotenv', '~> 2.7', '>= 2.7.6'
 gem 'guard-rspec', '~> 4.7', '>= 4.7.3', require: false
