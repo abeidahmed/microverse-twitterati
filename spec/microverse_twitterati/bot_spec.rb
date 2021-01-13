@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
-require './lib/microverse_twitterati/errors'
-require './lib/microverse_twitterati/bot'
+require_relative '../../lib/microverse_twitterati/errors'
+require_relative '../../lib/microverse_twitterati/bot'
 
 # rubocop:disable Metrics/BlockLength
 RSpec.describe MicroverseTwitterati::Bot do

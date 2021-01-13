@@ -1,5 +1,5 @@
 require_relative '../spec_helper'
-require './lib/microverse_twitterati/yaml_writer'
+require_relative '../../lib/microverse_twitterati/yaml_writer'
 
 # rubocop:disable Metrics/BlockLength
 RSpec.describe MicroverseTwitterati::YamlWriter do

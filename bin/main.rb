@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'dotenv/load'
-require './lib/microverse_twitterati/bot'
+require_relative '../lib/microverse_twitterati/bot'
 
 TWITTER_API_SETTINGS = {
   consumer_key: ENV['TWITTER_API_KEY'],

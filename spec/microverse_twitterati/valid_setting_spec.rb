@@ -1,5 +1,5 @@
 require_relative '../spec_helper'
-require './lib/microverse_twitterati/valid_setting'
+require_relative '../../lib/microverse_twitterati/valid_setting'
 
 RSpec.describe MicroverseTwitterati::ValidSetting do
   let(:valid_hash) { { consumer_key: 'world', consumer_secret: 'world' } }

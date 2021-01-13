@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
-require './lib/microverse_twitterati/yaml_writer'
-require './lib/microverse_twitterati/blocked_user'
+require_relative '../../lib/microverse_twitterati/yaml_writer'
+require_relative '../../lib/microverse_twitterati/blocked_user'
 
 RSpec.describe MicroverseTwitterati::BlockedUser do
   file_path = 'config/blocked_user.yml'.freeze
