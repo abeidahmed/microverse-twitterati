@@ -44,7 +44,7 @@ itself. By making this optimization, the bot ran within 3 seconds.
 In order to use the app, you need to sign up for the developer account
 on twitter. Get all the `tokens`, `keys` and paste it as shown below:
 
-
+### Important ⚠️ ⚠️ ⚠️
 Create a `.env` file on the root directory and paste the keys as shown
 below:
 ```json
