@@ -54,5 +54,4 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 
 # Config files
-/config/blocked_user.yml
 /config/helloworld.yml
