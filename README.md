@@ -73,5 +73,5 @@ To all the awesome `ruby` gems out there that have made our lives simple
 and pain free.
 
 ## License
-Copyright 2021 Abeid Ahmed. Licensed under MIT.
+Copyright 2021 Abeid Ahmed. Licensed under [MIT](https://opensource.org/licenses/MIT)
 
