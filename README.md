@@ -43,15 +43,20 @@ itself. By making this optimization, the bot ran within 3 seconds.
 ## Necessary requirements
 In order to use the app, you need to sign up for the developer account
 on twitter. Get all the `tokens`, `keys` and paste it as shown below:
-```ruby
-TWITTER_API_SETTINGS = {
-  consumer_key: ENV['TWITTER_API_KEY'], # your twitter consumer key
-  consumer_secret: ENV['TWITTER_SECRET_KEY'], # your consumer key
-  access_token: ENV['TWITTER_ACCESS_TOKEN'], # your access token
-  access_token_secret: ENV['TWITTER_TOKEN_SECRET'] # your token
-}.freeze
+
+
+Create a `.env` file on the root directory and paste the keys as shown
+below:
+```json
+TWITTER_API_KEY=YOUR_KEY
+TWITTER_SECRET_KEY=YOUR_SECRET
+TWITTER_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
+TWITTER_TOKEN_SECRET=YOUR_TOKEN_SECRET
 ```
-Paste all the configurations in the `bin/main.rb` file.
+
+Please obtain all the above keys from
+[here](https://developer.twitter.com). If you are a TSE reviewing the
+project, please message me on Slack(Abeid Ahmed) to obtain the keys.
 
 ## Usage
 - Clone the repo `https://github.com/abeidahmed/microverse-twitterati.git`
@@ -59,11 +64,14 @@ Paste all the configurations in the `bin/main.rb` file.
 - Run `git checkout -b feature-retweet`
 - Run `git pull origin feature-retweet`
 - Run `bundle install`
+- Make sure you add the keys before running the bot.
 - Run `bin/main.rb` or run `rake bot`
 
 ## Test
 - Run `bundle exec guard` to run the test automatically when the file
   changes.
+- Make sure you add the keys with the help of the above instructions
+  before you run the test. Otherwise it will fail.
 
 ## Author
 👤 **abeidahmed**
