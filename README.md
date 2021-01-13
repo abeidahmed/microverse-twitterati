@@ -2,6 +2,9 @@
 
 > Retweeting tweets that are tagged with #microverse.
 
+## Video link
+[Loom video](https://www.loom.com/share/c5abb51d0fba4ee6a38114c3751dca23)
+
 ## Description
 This project was done as a part of the `ruby` capstone
 project. It is a command line bot that when run, iterates through the
