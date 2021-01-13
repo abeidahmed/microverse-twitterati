@@ -1,0 +1,572 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.twitter.com/1.1/blocks/ids.json?cursor=-1",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "TwitterRubyGem/7.0.0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Host": [
+            "api.twitter.com"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Disposition": [
+            "attachment; filename=json.json"
+          ],
+          "Content-Length": [
+            "113"
+          ],
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Date": [
+            "Wed, 13 Jan 2021 08:26:40 GMT"
+          ],
+          "Expires": [
+            "Tue, 31 Mar 1981 05:00:00 GMT"
+          ],
+          "Last-Modified": [
+            "Wed, 13 Jan 2021 08:26:40 GMT"
+          ],
+          "Pragma": [
+            "no-cache"
+          ],
+          "Server": [
+            "tsa_k"
+          ],
+          "Set-Cookie": [
+            "guest_id=v1%3A161052640049526804; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:40 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None",
+            "lang=en; Path=/",
+            "personalization_id=\"v1_9KvLWtizPWZusqKfluOEOA==\"; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:40 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None"
+          ],
+          "Status": [
+            "200 OK"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=631138519"
+          ],
+          "X-Access-Level": [
+            "read-write"
+          ],
+          "X-Connection-Hash": [
+            "9af4e722598c1df8ea1ed8cfa7fe0486"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Rate-Limit-Limit": [
+            "15"
+          ],
+          "X-Rate-Limit-Remaining": [
+            "13"
+          ],
+          "X-Rate-Limit-Reset": [
+            "1610527236"
+          ],
+          "X-Response-Time": [
+            "186"
+          ],
+          "X-Transaction": [
+            "00edc1ef006d0b1a"
+          ],
+          "X-Twitter-Response-Tags": [
+            "BouncerCompliant"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"ids\":[],\"next_cursor\":0,\"next_cursor_str\":\"0\",\"previous_cursor\":0,\"previous_cursor_str\":\"0\",\"total_count\":null}"
+        }
+      },
+      "recorded_at": "Wed, 13 Jan 2021 08:26:40 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=MicroverseB",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "TwitterRubyGem/7.0.0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Host": [
+            "api.twitter.com"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Disposition": [
+            "attachment; filename=json.json"
+          ],
+          "Content-Length": [
+            "39071"
+          ],
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Date": [
+            "Wed, 13 Jan 2021 08:26:41 GMT"
+          ],
+          "Expires": [
+            "Tue, 31 Mar 1981 05:00:00 GMT"
+          ],
+          "Last-Modified": [
+            "Wed, 13 Jan 2021 08:26:41 GMT"
+          ],
+          "Pragma": [
+            "no-cache"
+          ],
+          "Server": [
+            "tsa_k"
+          ],
+          "Set-Cookie": [
+            "guest_id=v1%3A161052640106204115; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:41 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None",
+            "lang=en; Path=/",
+            "personalization_id=\"v1_FGjHLE3W0H62vu/zhMnR9g==\"; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:41 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None"
+          ],
+          "Status": [
+            "200 OK"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=631138519"
+          ],
+          "X-Access-Level": [
+            "read-write"
+          ],
+          "X-App-Rate-Limit-Limit": [
+            "100000"
+          ],
+          "X-App-Rate-Limit-Remaining": [
+            "99999"
+          ],
+          "X-App-Rate-Limit-Reset": [
+            "1610612801"
+          ],
+          "X-Connection-Hash": [
+            "4bbb1f7359c01414af6dce760e92f80f"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Rate-Limit-Limit": [
+            "900"
+          ],
+          "X-Rate-Limit-Remaining": [
+            "899"
+          ],
+          "X-Rate-Limit-Reset": [
+            "1610527301"
+          ],
+          "X-Response-Time": [
+            "356"
+          ],
+          "X-Transaction": [
+            "008f68d100240795"
+          ],
+          "X-Twitter-Response-Tags": [
+            "BouncerCompliant"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "[{\"created_at\":\"Tue Jan 12 16:27:44 +0000 2021\",\"id\":1349030309988192257,\"id_str\":\"1349030309988192257\",\"text\":\"RT @Yellit8: Capitalized hash tag #Microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"Microverse\",\"indices\":[34,45]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 16:27:35 +0000 2021\",\"id\":1349030271383789569,\"id_str\":\"1349030271383789569\",\"text\":\"Capitalized hash tag #Microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"Microverse\",\"indices\":[21,32]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 16:13:36 +0000 2021\",\"id\":1349026753084157953,\"id_str\":\"1349026753084157953\",\"text\":\"RT @AymenBida: This is a test #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[30,41]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"AymenBida\",\"name\":\"Aymen Bida\",\"id\":1306960504729079809,\"id_str\":\"1306960504729079809\",\"indices\":[3,13]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 16:13:20 +0000 2021\",\"id\":1349026687175057408,\"id_str\":\"1349026687175057408\",\"text\":\"This is a test #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[15,26]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1306960504729079809,\"id_str\":\"1306960504729079809\",\"name\":\"Aymen Bida\",\"screen_name\":\"AymenBida\",\"location\":\"\",\"description\":\"I'm a musician and a web developer and I wish to be more of the second ^^\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":8,\"listed_count\":0,\"created_at\":\"Fri Sep 18 14:17:30 +0000 2020\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":1,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1306960594537451528\\/Y6Rdnvmv_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1306960594537451528\\/Y6Rdnvmv_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 13:58:22 +0000 2021\",\"id\":1348992720673492995,\"id_str\":\"1348992720673492995\",\"text\":\"RT @Yellit8: Major refactoring #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[31,42]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 13:58:01 +0000 2021\",\"id\":1348992635092963328,\"id_str\":\"1348992635092963328\",\"text\":\"Major refactoring #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[18,29]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"ro\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"ro\"},{\"created_at\":\"Tue Jan 12 10:02:26 +0000 2021\",\"id\":1348933345351122944,\"id_str\":\"1348933345351122944\",\"text\":\"RT @Yellit8: Need to tag it #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[28,39]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 10:02:08 +0000 2021\",\"id\":1348933271506153473,\"id_str\":\"1348933271506153473\",\"text\":\"Need to tag it #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[15,26]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 09:20:19 +0000 2021\",\"id\":1348922746093268993,\"id_str\":\"1348922746093268993\",\"text\":\"RT @Yellit8: Refactoring peeps #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[31,42]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 09:20:05 +0000 2021\",\"id\":1348922688845189120,\"id_str\":\"1348922688845189120\",\"text\":\"Refactoring peeps #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[18,29]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:49:29 +0000 2021\",\"id\":1348914989721997317,\"id_str\":\"1348914989721997317\",\"text\":\"RT @Yellit8: It works. Hurray! \\ud83d\\ude00#microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[32,43]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:49:15 +0000 2021\",\"id\":1348914927545667585,\"id_str\":\"1348914927545667585\",\"text\":\"It works. Hurray! \\ud83d\\ude00#microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[19,30]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:23:28 +0000 2021\",\"id\":1348908441620815876,\"id_str\":\"1348908441620815876\",\"text\":\"RT @Yellit8: Will this tweet be retweeted? #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[43,54]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:23:13 +0000 2021\",\"id\":1348908377749954562,\"id_str\":\"1348908377749954562\",\"text\":\"Will this tweet be retweeted? #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[30,41]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:22:03 +0000 2021\",\"id\":1348908084178030592,\"id_str\":\"1348908084178030592\",\"text\":\"RT @Yellit8: Hello world #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[25,36]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:21:48 +0000 2021\",\"id\":1348908020013563906,\"id_str\":\"1348908020013563906\",\"text\":\"Hello world #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[12,23]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 07:57:30 +0000 2021\",\"id\":1348901906383425540,\"id_str\":\"1348901906383425540\",\"text\":\"Is it working?\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 06:11:03 +0000 2021\",\"id\":1348875119347683339,\"id_str\":\"1348875119347683339\",\"text\":\"hello world another time\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 05:45:45 +0000 2021\",\"id\":1348868749214969856,\"id_str\":\"1348868749214969856\",\"text\":\"Hello world\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"}]"
+        }
+      },
+      "recorded_at": "Wed, 13 Jan 2021 08:26:41 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&include_rts=true",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "TwitterRubyGem/7.0.0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Host": [
+            "api.twitter.com"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Disposition": [
+            "attachment; filename=json.json"
+          ],
+          "Content-Length": [
+            "39071"
+          ],
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Date": [
+            "Wed, 13 Jan 2021 08:26:42 GMT"
+          ],
+          "Expires": [
+            "Tue, 31 Mar 1981 05:00:00 GMT"
+          ],
+          "Last-Modified": [
+            "Wed, 13 Jan 2021 08:26:41 GMT"
+          ],
+          "Pragma": [
+            "no-cache"
+          ],
+          "Server": [
+            "tsa_k"
+          ],
+          "Set-Cookie": [
+            "guest_id=v1%3A161052640189392135; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:41 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None",
+            "lang=en; Path=/",
+            "personalization_id=\"v1_2rzMC3ZcswN1FZ3h9D+p5Q==\"; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:41 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None"
+          ],
+          "Status": [
+            "200 OK"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=631138519"
+          ],
+          "X-Access-Level": [
+            "read-write"
+          ],
+          "X-App-Rate-Limit-Limit": [
+            "100000"
+          ],
+          "X-App-Rate-Limit-Remaining": [
+            "99999"
+          ],
+          "X-App-Rate-Limit-Reset": [
+            "1610612801"
+          ],
+          "X-Connection-Hash": [
+            "3e87e7250c0c89ce119e22cbb2780878"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Rate-Limit-Limit": [
+            "900"
+          ],
+          "X-Rate-Limit-Remaining": [
+            "898"
+          ],
+          "X-Rate-Limit-Reset": [
+            "1610527301"
+          ],
+          "X-Response-Time": [
+            "229"
+          ],
+          "X-Transaction": [
+            "00b2128500287ecc"
+          ],
+          "X-Twitter-Response-Tags": [
+            "BouncerCompliant"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "[{\"created_at\":\"Tue Jan 12 16:27:44 +0000 2021\",\"id\":1349030309988192257,\"id_str\":\"1349030309988192257\",\"text\":\"RT @Yellit8: Capitalized hash tag #Microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"Microverse\",\"indices\":[34,45]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 16:27:35 +0000 2021\",\"id\":1349030271383789569,\"id_str\":\"1349030271383789569\",\"text\":\"Capitalized hash tag #Microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"Microverse\",\"indices\":[21,32]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 16:13:36 +0000 2021\",\"id\":1349026753084157953,\"id_str\":\"1349026753084157953\",\"text\":\"RT @AymenBida: This is a test #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[30,41]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"AymenBida\",\"name\":\"Aymen Bida\",\"id\":1306960504729079809,\"id_str\":\"1306960504729079809\",\"indices\":[3,13]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 16:13:20 +0000 2021\",\"id\":1349026687175057408,\"id_str\":\"1349026687175057408\",\"text\":\"This is a test #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[15,26]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1306960504729079809,\"id_str\":\"1306960504729079809\",\"name\":\"Aymen Bida\",\"screen_name\":\"AymenBida\",\"location\":\"\",\"description\":\"I'm a musician and a web developer and I wish to be more of the second ^^\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":8,\"listed_count\":0,\"created_at\":\"Fri Sep 18 14:17:30 +0000 2020\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":1,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1306960594537451528\\/Y6Rdnvmv_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1306960594537451528\\/Y6Rdnvmv_normal.jpg\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 13:58:22 +0000 2021\",\"id\":1348992720673492995,\"id_str\":\"1348992720673492995\",\"text\":\"RT @Yellit8: Major refactoring #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[31,42]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 13:58:01 +0000 2021\",\"id\":1348992635092963328,\"id_str\":\"1348992635092963328\",\"text\":\"Major refactoring #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[18,29]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"ro\"},\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"ro\"},{\"created_at\":\"Tue Jan 12 10:02:26 +0000 2021\",\"id\":1348933345351122944,\"id_str\":\"1348933345351122944\",\"text\":\"RT @Yellit8: Need to tag it #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[28,39]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 10:02:08 +0000 2021\",\"id\":1348933271506153473,\"id_str\":\"1348933271506153473\",\"text\":\"Need to tag it #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[15,26]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 09:20:19 +0000 2021\",\"id\":1348922746093268993,\"id_str\":\"1348922746093268993\",\"text\":\"RT @Yellit8: Refactoring peeps #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[31,42]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 09:20:05 +0000 2021\",\"id\":1348922688845189120,\"id_str\":\"1348922688845189120\",\"text\":\"Refactoring peeps #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[18,29]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:49:29 +0000 2021\",\"id\":1348914989721997317,\"id_str\":\"1348914989721997317\",\"text\":\"RT @Yellit8: It works. Hurray! \\ud83d\\ude00#microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[32,43]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:49:15 +0000 2021\",\"id\":1348914927545667585,\"id_str\":\"1348914927545667585\",\"text\":\"It works. Hurray! \\ud83d\\ude00#microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[19,30]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:23:28 +0000 2021\",\"id\":1348908441620815876,\"id_str\":\"1348908441620815876\",\"text\":\"RT @Yellit8: Will this tweet be retweeted? #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[43,54]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:23:13 +0000 2021\",\"id\":1348908377749954562,\"id_str\":\"1348908377749954562\",\"text\":\"Will this tweet be retweeted? #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[30,41]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 08:22:03 +0000 2021\",\"id\":1348908084178030592,\"id_str\":\"1348908084178030592\",\"text\":\"RT @Yellit8: Hello world #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[25,36]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"Yellit8\",\"name\":\"Yell it\",\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"indices\":[3,11]}],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Tue Jan 12 08:21:48 +0000 2021\",\"id\":1348908020013563906,\"id_str\":\"1348908020013563906\",\"text\":\"Hello world #microverse\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"microverse\",\"indices\":[12,23]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\\u003ca href=\\\"https:\\/\\/mobile.twitter.com\\\" rel=\\\"nofollow\\\"\\u003eTwitter Web App\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348907786885689347,\"id_str\":\"1348907786885689347\",\"name\":\"Yell it\",\"screen_name\":\"Yellit8\",\"location\":\"\",\"description\":\"\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":0,\"friends_count\":1,\"listed_count\":0,\"created_at\":\"Tue Jan 12 08:21:01 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":8,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_image_url_https\":\"https:\\/\\/abs.twimg.com\\/sticky\\/default_profile_images\\/default_profile_normal.png\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":true,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":1,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":1,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 07:57:30 +0000 2021\",\"id\":1348901906383425540,\"id_str\":\"1348901906383425540\",\"text\":\"Is it working?\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 06:11:03 +0000 2021\",\"id\":1348875119347683339,\"id_str\":\"1348875119347683339\",\"text\":\"hello world another time\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 05:45:45 +0000 2021\",\"id\":1348868749214969856,\"id_str\":\"1348868749214969856\",\"text\":\"Hello world\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"}]"
+        }
+      },
+      "recorded_at": "Wed, 13 Jan 2021 08:26:42 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.twitter.com/1.1/statuses/user_timeline.json?count=200&include_rts=true&max_id=1348908084178030591",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "TwitterRubyGem/7.0.0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Host": [
+            "api.twitter.com"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Disposition": [
+            "attachment; filename=json.json"
+          ],
+          "Content-Length": [
+            "5999"
+          ],
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Date": [
+            "Wed, 13 Jan 2021 08:26:42 GMT"
+          ],
+          "Expires": [
+            "Tue, 31 Mar 1981 05:00:00 GMT"
+          ],
+          "Last-Modified": [
+            "Wed, 13 Jan 2021 08:26:42 GMT"
+          ],
+          "Pragma": [
+            "no-cache"
+          ],
+          "Server": [
+            "tsa_k"
+          ],
+          "Set-Cookie": [
+            "guest_id=v1%3A161052640259650788; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:42 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None",
+            "lang=en; Path=/",
+            "personalization_id=\"v1_aR0+DugmzlnCeQAxM14koA==\"; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:42 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None"
+          ],
+          "Status": [
+            "200 OK"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=631138519"
+          ],
+          "X-Access-Level": [
+            "read-write"
+          ],
+          "X-App-Rate-Limit-Limit": [
+            "100000"
+          ],
+          "X-App-Rate-Limit-Remaining": [
+            "99998"
+          ],
+          "X-App-Rate-Limit-Reset": [
+            "1610612801"
+          ],
+          "X-Connection-Hash": [
+            "a11d9accc492595974f8df669d6ce5fb"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Rate-Limit-Limit": [
+            "900"
+          ],
+          "X-Rate-Limit-Remaining": [
+            "897"
+          ],
+          "X-Rate-Limit-Reset": [
+            "1610527301"
+          ],
+          "X-Response-Time": [
+            "206"
+          ],
+          "X-Transaction": [
+            "00aa817500b142d7"
+          ],
+          "X-Twitter-Response-Tags": [
+            "BouncerCompliant"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "[{\"created_at\":\"Tue Jan 12 07:57:30 +0000 2021\",\"id\":1348901906383425540,\"id_str\":\"1348901906383425540\",\"text\":\"Is it working?\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 06:11:03 +0000 2021\",\"id\":1348875119347683339,\"id_str\":\"1348875119347683339\",\"text\":\"hello world another time\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"},{\"created_at\":\"Tue Jan 12 05:45:45 +0000 2021\",\"id\":1348868749214969856,\"id_str\":\"1348868749214969856\",\"text\":\"Hello world\",\"truncated\":false,\"entities\":{\"hashtags\":[],\"symbols\":[],\"user_mentions\":[],\"urls\":[]},\"source\":\"\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":1348859575106031617,\"id_str\":\"1348859575106031617\",\"name\":\"Microverse Bot\",\"screen_name\":\"MicroverseB\",\"location\":\"Remote\",\"description\":\"Spreading the word about @microverseinc. Retweets tweets that are tagged with #Microverse\\nCreated by @iamhawaabi\",\"url\":null,\"entities\":{\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":2,\"friends_count\":0,\"listed_count\":0,\"created_at\":\"Tue Jan 12 05:09:32 +0000 2021\",\"favourites_count\":0,\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"verified\":false,\"statuses_count\":11,\"lang\":null,\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"F5F8FA\",\"profile_background_image_url\":null,\"profile_background_image_url_https\":null,\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/1349034413313515522\\/0Cfqrl_8_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/1348859575106031617\\/1610470303\",\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"has_extended_profile\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false,\"translator_type\":\"none\"},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":0,\"favorite_count\":0,\"favorited\":false,\"retweeted\":false,\"lang\":\"en\"}]"
+        }
+      },
+      "recorded_at": "Wed, 13 Jan 2021 08:26:42 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.twitter.com/1.1/search/tweets.json?count=100&q=%23microverse&result_type=recent&rpp=50&since_id=1349030309988192257",
+        "body": {
+          "encoding": "UTF-8",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "TwitterRubyGem/7.0.0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Host": [
+            "api.twitter.com"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Cache-Control": [
+            "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+          ],
+          "Connection": [
+            "close"
+          ],
+          "Content-Disposition": [
+            "attachment; filename=json.json"
+          ],
+          "Content-Length": [
+            "324"
+          ],
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Date": [
+            "Wed, 13 Jan 2021 08:26:43 GMT"
+          ],
+          "Expires": [
+            "Tue, 31 Mar 1981 05:00:00 GMT"
+          ],
+          "Last-Modified": [
+            "Wed, 13 Jan 2021 08:26:43 GMT"
+          ],
+          "Pragma": [
+            "no-cache"
+          ],
+          "Server": [
+            "tsa_k"
+          ],
+          "Set-Cookie": [
+            "guest_id=v1%3A161052640316749723; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:43 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None",
+            "lang=en; Path=/",
+            "personalization_id=\"v1_r9APQPVrkRcdcbSglyEOrg==\"; Max-Age=63072000; Expires=Fri, 13 Jan 2023 08:26:43 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None"
+          ],
+          "Status": [
+            "200 OK"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=631138519"
+          ],
+          "X-Access-Level": [
+            "read-write"
+          ],
+          "X-Connection-Hash": [
+            "a7aeb2c51a7a6037235fa65be8b12838"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Rate-Limit-Limit": [
+            "180"
+          ],
+          "X-Rate-Limit-Remaining": [
+            "179"
+          ],
+          "X-Rate-Limit-Reset": [
+            "1610527303"
+          ],
+          "X-Response-Time": [
+            "195"
+          ],
+          "X-Transaction": [
+            "00475f6900a4b4bc"
+          ],
+          "X-Twitter-Response-Tags": [
+            "BouncerCompliant"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"statuses\":[],\"search_metadata\":{\"completed_in\":0.008,\"max_id\":1349271643458207749,\"max_id_str\":\"1349271643458207749\",\"query\":\"%23microverse\",\"refresh_url\":\"?since_id=1349271643458207749&q=%23microverse&result_type=recent&include_entities=1\",\"count\":100,\"since_id\":1349030309988192257,\"since_id_str\":\"1349030309988192257\"}}"
+        }
+      },
+      "recorded_at": "Wed, 13 Jan 2021 08:26:43 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.0.0"
+}
