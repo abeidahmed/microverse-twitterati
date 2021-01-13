@@ -11,7 +11,6 @@
 /tmp/
 
 # Used by dotenv library to load environment variables.
-# .env
 
 # Ignore Byebug command history file.
 .byebug_history
@@ -45,7 +44,6 @@ build-iPhoneSimulator/
 
 # for a library or gem, you might want to ignore these files since the code is
 # intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
 # .ruby-version
 # .ruby-gemset
 
@@ -54,3 +52,6 @@ build-iPhoneSimulator/
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
+
+# Config files
+/config/helloworld.yml

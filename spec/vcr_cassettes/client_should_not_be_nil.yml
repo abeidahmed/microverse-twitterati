@@ -1,0 +1,1056 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json?skip_status=true
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="78a6461ee3aa492c8b983a59edd5b8fb",
+        oauth_signature="Drs%2FAwmwjIos4PG9fArQvX8bQhw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460707", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1324'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:48 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:48 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046070803830902; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:48 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_6smYQpZ0C6i0uuRKRRn1Ow=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:48 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 557fe9c2ecd7df51c73bfd24ce0cde1d
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '75'
+      X-Rate-Limit-Remaining:
+      - '74'
+      X-Rate-Limit-Reset:
+      - '1610461608'
+      X-Response-Time:
+      - '192'
+      X-Transaction:
+      - 00a0b15f00180019
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"id":1348859575106031617,"id_str":"1348859575106031617","name":"Microverse
+        Bot","screen_name":"MicroverseB","location":"","description":"Retweets tweets
+        that are tagged with #microverse","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2,"friends_count":0,"listed_count":0,"created_at":"Tue
+        Jan 12 05:09:32 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":9,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none","suspended":false,"needs_phone_verification":false}'
+  recorded_at: Tue, 12 Jan 2021 14:11:48 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/followers/ids.json?cursor=-1&user_id=1348859575106031617
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="03576347e56aa479b68a4d241ae1e3cf",
+        oauth_signature="J1onNyf2aK8ZN2l%2BmNQDnx91QF8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460708", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '151'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:48 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:48 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046070862417532; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:48 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_GsLO8hnG5M+D2x/ef3Mp5A=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:48 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 053db74557b6dd1eb6b322753be8899d
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1610461608'
+      X-Response-Time:
+      - '189'
+      X-Transaction:
+      - 00f2c73b00159a9e
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"ids":[1348907786885689347,828657908611239936],"next_cursor":0,"next_cursor_str":"0","previous_cursor":0,"previous_cursor_str":"0","total_count":null}'
+  recorded_at: Tue, 12 Jan 2021 14:11:48 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?result_type=recent&user_id=1348907786885689347
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="395f3c670cf551cff709c413e12b20ce",
+        oauth_signature="1dloCBTv8065tbwzc1t5N%2FyjFck%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460708", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '13450'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:49 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:49 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046070920280453; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:49 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_GRlb9DLB9ujCgFFG2hBuhw=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:49 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-App-Rate-Limit-Limit:
+      - '100000'
+      X-App-Rate-Limit-Remaining:
+      - '99960'
+      X-App-Rate-Limit-Reset:
+      - '1610525204'
+      X-Connection-Hash:
+      - 837721efbcbfe4b65dd01f73642eefe1
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '896'
+      X-Rate-Limit-Reset:
+      - '1610460799'
+      X-Response-Time:
+      - '224'
+      X-Transaction:
+      - 00a51db5003178ad
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Jan 12 13:58:01 +0000 2021","id":1348992635092963328,"id_str":"1348992635092963328","text":"Major
+        refactoring #microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[18,29]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":0,"favorited":false,"retweeted":true,"lang":"ro"},{"created_at":"Tue
+        Jan 12 10:02:08 +0000 2021","id":1348933271506153473,"id_str":"1348933271506153473","text":"Need
+        to tag it #microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[15,26]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":1,"favorited":false,"retweeted":true,"lang":"en"},{"created_at":"Tue
+        Jan 12 10:01:57 +0000 2021","id":1348933223699542016,"id_str":"1348933223699542016","text":"Is
+        new refactoring tweets class working?","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Tue
+        Jan 12 09:20:05 +0000 2021","id":1348922688845189120,"id_str":"1348922688845189120","text":"Refactoring
+        peeps #microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[18,29]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":1,"favorited":false,"retweeted":true,"lang":"en"},{"created_at":"Tue
+        Jan 12 08:49:15 +0000 2021","id":1348914927545667585,"id_str":"1348914927545667585","text":"It
+        works. Hurray! \ud83d\ude00#microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[19,30]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"favorited":false,"retweeted":true,"lang":"en"},{"created_at":"Tue
+        Jan 12 08:23:13 +0000 2021","id":1348908377749954562,"id_str":"1348908377749954562","text":"Will
+        this tweet be retweeted? #microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[30,41]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":1,"favorited":false,"retweeted":true,"lang":"en"},{"created_at":"Tue
+        Jan 12 08:21:48 +0000 2021","id":1348908020013563906,"id_str":"1348908020013563906","text":"Hello
+        world #microverse","truncated":false,"entities":{"hashtags":[{"text":"microverse","indices":[12,23]}],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1348907786885689347,"id_str":"1348907786885689347","name":"Yell
+        it","screen_name":"Yellit8","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":1,"listed_count":0,"created_at":"Tue
+        Jan 12 08:21:01 +0000 2021","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":7,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"favorited":false,"retweeted":true,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 14:11:49 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348992635092963328.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="a685f99952b3648f67007039b46fc0ce",
+        oauth_signature="EX7G3oaH7XFJA2a8YaIoBcqWT70%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460709", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:49 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:49 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046070980704231; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:49 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_8MooGsVeqKlNupoZxZUlAA=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:49 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 0d176a9bb65e6aea5263ed8d332784cc
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '200'
+      X-Transaction:
+      - '00988ba7009bccbc'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:50 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348933271506153473.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="65e475b1fad96d92720b3c3692509c62",
+        oauth_signature="nlLFPpwYRSDEPuXYKSqQee%2FcyCI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460710", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:50 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071038673521; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:50 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_Png8nh8sp/9wQZaQ7Zbb8w=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:50 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - e2d937a392641c783405bf555236040f
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '199'
+      X-Transaction:
+      - '0023286e00db37a8'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:50 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348922688845189120.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="9ac8c6a1aefc7f0e0dc0fa1eb956fd2c",
+        oauth_signature="W83iRwrd5V3T28mZQkTtx2MSHQo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460710", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:51 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071097233226; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:50 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_FpVVZSC0f4ZG97/wR4+Yqg=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:50 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 6c720a2367828169093e1fd4dffff449
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '198'
+      X-Transaction:
+      - 00bdb9cc00a54e4a
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:51 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348914927545667585.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="1259dd004d3b5adaeae5061f13d1136a",
+        oauth_signature="GS2Bv0tiKxshdWL%2Bq9gXf%2BfdziM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460711", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:51 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:51 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071157837862; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:51 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_v7gPjkZ3aroblM+iQZW8+A=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:51 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - c19a489698e4043a1c8a65e7b002819a
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '198'
+      X-Transaction:
+      - 00d784f700485019
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:51 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348908377749954562.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="b2e57d02896fdbc059b0fd03888a751e",
+        oauth_signature="U88O9HYY%2BgfrwFHgcQVDzmLcCZw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460711", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:52 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:52 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071215465000; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_5BovCU6sVOFbNFypQ7HUZw=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - b7586e31259c072ded3daf81177501ca
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '200'
+      X-Transaction:
+      - 006bcc8e003bfb05
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:52 GMT
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/1348908020013563906.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="029634945180d6550ecceca96474d365",
+        oauth_signature="K%2F71%2B0Ir4V93eUws1hLlu6O3yhM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460712", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:52 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:52 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071284989654; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_U3fsSaAuQdHWMl5duqxm2Q=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:52 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 8dd0d513461e18071caa7e792f64940b
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '209'
+      X-Transaction:
+      - 004d4b570062799d
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":327,"message":"You have already retweeted this Tweet."}]}'
+  recorded_at: Tue, 12 Jan 2021 14:11:53 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?result_type=recent&user_id=828657908611239936
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/7.0.0
+      Authorization:
+      - OAuth oauth_consumer_key="TxSyzt4yJEGWqZ7rultVXOfY4", oauth_nonce="92e0e1a9a5ef21c9fc42a3fb599ef606",
+        oauth_signature="k56njEX6irfBaBIEEFDJMvBbLkg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1610460713", oauth_token="1348859575106031617-4KQLgyJ0xGxxO5AanjZjByiImnYf1X",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '76685'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 12 Jan 2021 14:11:53 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 12 Jan 2021 14:11:53 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_k
+      Set-Cookie:
+      - guest_id=v1%3A161046071344153387; Max-Age=63072000; Expires=Thu, 12 Jan 2023
+        14:11:53 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - lang=en; Path=/
+      - personalization_id="v1_vUab4gTpOPWO/FGU4loHJQ=="; Max-Age=63072000; Expires=Thu,
+        12 Jan 2023 14:11:53 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-App-Rate-Limit-Limit:
+      - '100000'
+      X-App-Rate-Limit-Remaining:
+      - '99959'
+      X-App-Rate-Limit-Reset:
+      - '1610525204'
+      X-Connection-Hash:
+      - 2deb15c327cab907efcf7e2d882e223f
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '895'
+      X-Rate-Limit-Reset:
+      - '1610460799'
+      X-Response-Time:
+      - '287'
+      X-Transaction:
+      - '0019ea860070f6bb'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Thu Dec 10 04:11:40 +0000 2020","id":1336886273391226881,"id_str":"1336886273391226881","text":"RT
+        @rails: Rails 6.1.0 has been release! Horizontal Sharding, Multi-DB Improvements,
+        Strict Loading, Destroy Associations in Background, Er\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"rails","name":"Ruby
+        on Rails","id":3116191,"id_str":"3116191","indices":[3,9]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Dec 09 20:18:39 +0000 2020","id":1336767234941841408,"id_str":"1336767234941841408","text":"Rails
+        6.1.0 has been release! Horizontal Sharding, Multi-DB Improvements, Strict
+        Loading, Destroy Associations in B\u2026 https:\/\/t.co\/3GllqojeUv","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/3GllqojeUv","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1336767234941841408","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/tapbots.com\/software\/tweetbot\/mac\" rel=\"nofollow\"\u003eTweetbot
+        for Mac\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3116191,"id_str":"3116191","name":"Ruby
+        on Rails","screen_name":"rails","location":"","description":"Imagine what
+        you could build if you learned Ruby on Rails\u2026","url":"https:\/\/t.co\/CIeGe0AbrA","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/CIeGe0AbrA","expanded_url":"http:\/\/rubyonrails.org","display_url":"rubyonrails.org","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":137027,"friends_count":30,"listed_count":3655,"created_at":"Sun
+        Apr 01 10:20:11 +0000 2007","favourites_count":14,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":810,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"EBEBEB","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme7\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/691206086955790336\/CDMbA57p_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/691206086955790336\/CDMbA57p_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3116191\/1524784158","profile_link_color":"990000","profile_sidebar_border_color":"DFDFDF","profile_sidebar_fill_color":"F3F3F3","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":337,"favorite_count":906,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":337,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Sat
+        Dec 05 03:22:30 +0000 2020","id":1335061960786726913,"id_str":"1335061960786726913","text":"@jaredcwhite
+        Pundit is one of the most expressive ruby gem that I''ve encountered. It''s
+        just simple ruby class with\u2026 https:\/\/t.co\/oeJmETosbG","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"jaredcwhite","name":"Jared
+        White","id":18657020,"id_str":"18657020","indices":[0,12]}],"urls":[{"url":"https:\/\/t.co\/oeJmETosbG","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1335061960786726913","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[116,139]}]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":1335047013906313222,"in_reply_to_status_id_str":"1335047013906313222","in_reply_to_user_id":18657020,"in_reply_to_user_id_str":"18657020","in_reply_to_screen_name":"jaredcwhite","user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        Oct 23 05:03:51 +0000 2020","id":1319504787545620480,"id_str":"1319504787545620480","text":"RT
+        @britrbennett: The inability to discuss the concerns of black voters without
+        talking about crime","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"britrbennett","name":"Brit
+        Bennett","id":612190532,"id_str":"612190532","indices":[3,16]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Fri
+        Oct 23 02:13:56 +0000 2020","id":1319462025974718465,"id_str":"1319462025974718465","text":"The
+        inability to discuss the concerns of black voters without talking about crime","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":612190532,"id_str":"612190532","name":"Brit
+        Bennett","screen_name":"britrbennett","location":"Brooklyn, NY","description":"Author
+        of THE MOTHERS and THE VANISHING HALF","url":"https:\/\/t.co\/uLhi02DOkb","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/uLhi02DOkb","expanded_url":"http:\/\/britbennett.com\/events","display_url":"britbennett.com\/events","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":35156,"friends_count":365,"listed_count":322,"created_at":"Tue
+        Jun 19 02:14:09 +0000 2012","favourites_count":25149,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":true,"statuses_count":8776,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1225037574349127687\/g1nFQr3f_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1225037574349127687\/g1nFQr3f_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/612190532\/1586967290","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2903,"favorite_count":10832,"favorited":false,"retweeted":false,"lang":"en"},"is_quote_status":false,"retweet_count":2903,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Sat
+        Sep 26 03:15:56 +0000 2020","id":1309693158356262912,"id_str":"1309693158356262912","text":"RT
+        @rubylangorg: Ruby 3.0.0 Preview 1 Released https:\/\/t.co\/o6lkjD5PKw","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"rubylangorg","name":"Ruby
+        Language","id":4777438399,"id_str":"4777438399","indices":[3,15]}],"urls":[{"url":"https:\/\/t.co\/o6lkjD5PKw","expanded_url":"https:\/\/ift.tt\/2FRhgqo","display_url":"ift.tt\/2FRhgqo","indices":[47,70]}]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Fri
+        Sep 25 16:40:24 +0000 2020","id":1309533221571485696,"id_str":"1309533221571485696","text":"Ruby
+        3.0.0 Preview 1 Released https:\/\/t.co\/o6lkjD5PKw","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/o6lkjD5PKw","expanded_url":"https:\/\/ift.tt\/2FRhgqo","display_url":"ift.tt\/2FRhgqo","indices":[30,53]}]},"source":"\u003ca
+        href=\"https:\/\/ifttt.com\" rel=\"nofollow\"\u003eIFTTT\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":4777438399,"id_str":"4777438399","name":"Ruby
+        Language","screen_name":"rubylangorg","location":"Matz-e, Japan","description":"","url":"https:\/\/t.co\/wbwOExj9RO","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/wbwOExj9RO","expanded_url":"http:\/\/www.ruby-lang.org","display_url":"ruby-lang.org","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1952,"friends_count":0,"listed_count":65,"created_at":"Mon
+        Jan 18 07:48:29 +0000 2016","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":79,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/688991977635852288\/ZnPKFyBD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/688991977635852288\/ZnPKFyBD_normal.png","profile_link_color":"CC342D","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":281,"favorite_count":553,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":281,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Sat
+        Sep 19 06:02:15 +0000 2020","id":1307198297547841537,"id_str":"1307198297547841537","text":"Completely
+        OSS. Your upvotes will mean a lot! \ud83d\ude00 #100DaysOfCode  https:\/\/t.co\/M6CLVkl81o","truncated":false,"entities":{"hashtags":[{"text":"100DaysOfCode","indices":[48,62]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/M6CLVkl81o","expanded_url":"https:\/\/www.producthunt.com\/posts\/stylish-vscode","display_url":"producthunt.com\/posts\/stylish-\u2026","indices":[64,87]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":4,"favorite_count":1,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Fri
+        Sep 18 07:15:11 +0000 2020","id":1306854262517899264,"id_str":"1306854262517899264","text":"Style
+        your vscode like the way you want. Pick themes and fonts for your coding language,
+        and get started. By\u2026 https:\/\/t.co\/N9RDko6vIz","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/N9RDko6vIz","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1306854262517899264","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[110,133]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Wed
+        Sep 02 16:01:19 +0000 2020","id":1301188465711702018,"id_str":"1301188465711702018","text":"@microverseinc
+        Ruby \ud83d\ude00","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"microverseinc","name":"Microverse","id":891078487976558593,"id_str":"891078487976558593","indices":[0,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":1301132273497112576,"in_reply_to_status_id_str":"1301132273497112576","in_reply_to_user_id":891078487976558593,"in_reply_to_user_id_str":"891078487976558593","in_reply_to_screen_name":"microverseinc","user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":1,"favorited":false,"retweeted":false,"lang":"ht"},{"created_at":"Sun
+        Jul 05 04:06:50 +0000 2020","id":1279627775549140994,"id_str":"1279627775549140994","text":"@GaganGulyani
+        It''s like high-fiving yourself \ud83e\udd23","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"GaganGulyani","name":"Gagan
+        Deep Singh","id":624576057,"id_str":"624576057","indices":[0,13]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":1279432498452197377,"in_reply_to_status_id_str":"1279432498452197377","in_reply_to_user_id":624576057,"in_reply_to_user_id_str":"624576057","in_reply_to_screen_name":"GaganGulyani","user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Wed
+        Jul 01 07:05:17 +0000 2020","id":1278223130436096000,"id_str":"1278223130436096000","text":"Hello
+        twitter. This is my first article on dev. Check it out and give me a follow
+        if you enjoyed it.\n\"Understanding\u2026 https:\/\/t.co\/kop7NIebqW","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/kop7NIebqW","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1278223130436096000","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Wed
+        Jun 17 10:18:09 +0000 2020","id":1273198239211155456,"id_str":"1273198239211155456","text":"@aboeinas
+        @dhh PWA don''t support push notifications. Hey being an email service cannot
+        benefit from PWA.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"aboeinas","name":"ALI
+        ALSSAIARI","id":144202887,"id_str":"144202887","indices":[0,9]},{"screen_name":"dhh","name":"DHH","id":14561327,"id_str":"14561327","indices":[10,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":1273137228852707328,"in_reply_to_status_id_str":"1273137228852707328","in_reply_to_user_id":144202887,"in_reply_to_user_id_str":"144202887","in_reply_to_screen_name":"aboeinas","user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":2,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Wed
+        May 27 18:14:55 +0000 2020","id":1265708077099233288,"id_str":"1265708077099233288","text":"RT
+        @ania_kubow: THANK YOU for all your votes on which #JavaScriptGames I should
+        make next! There were 2 clear winners + I have already star\u2026","truncated":false,"entities":{"hashtags":[{"text":"JavaScriptGames","indices":[54,70]}],"symbols":[],"user_mentions":[{"screen_name":"ania_kubow","name":"Ania
+        Kub\u00f3w #JavaScriptGames","id":909815364846047232,"id_str":"909815364846047232","indices":[3,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        May 27 17:59:27 +0000 2020","id":1265704183912640514,"id_str":"1265704183912640514","text":"THANK
+        YOU for all your votes on which #JavaScriptGames I should make next! There
+        were 2 clear winners + I have alre\u2026 https:\/\/t.co\/rgtDGfel0b","truncated":true,"entities":{"hashtags":[{"text":"JavaScriptGames","indices":[38,54]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/rgtDGfel0b","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1265704183912640514","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":909815364846047232,"id_str":"909815364846047232","name":"Ania
+        Kub\u00f3w #JavaScriptGames","screen_name":"ania_kubow","location":"PLN UAE
+        SGP LDN","description":"Software Dev | I make #JavaScriptGames on my YouTube
+        + for Udemy \ud83e\udd18https:\/\/t.co\/mCd0PMxptI | Weekly coding tips partner:
+        https:\/\/t.co\/ItjW2muANY","url":"https:\/\/t.co\/OjIzilTV5L","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/OjIzilTV5L","expanded_url":"https:\/\/www.youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[0,23]}]},"description":{"urls":[{"url":"https:\/\/t.co\/mCd0PMxptI","expanded_url":"http:\/\/youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[66,89]},{"url":"https:\/\/t.co\/ItjW2muANY","expanded_url":"http:\/\/bit.ly\/JS-tips","display_url":"bit.ly\/JS-tips","indices":[120,143]}]}},"protected":false,"followers_count":27240,"friends_count":8122,"listed_count":306,"created_at":"Mon
+        Sep 18 16:24:21 +0000 2017","favourites_count":38969,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":2401,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/909815364846047232\/1609284776","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":10,"favorite_count":63,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":10,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        May 22 19:02:56 +0000 2020","id":1263908221603000321,"id_str":"1263908221603000321","text":"@EmmaBostian
+        Same here. I just mute those people.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"EmmaBostian","name":"Emma
+        Bostian \ud83d\udc1e","id":491821358,"id_str":"491821358","indices":[0,12]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":1263811807963209728,"in_reply_to_status_id_str":"1263811807963209728","in_reply_to_user_id":491821358,"in_reply_to_user_id_str":"491821358","in_reply_to_screen_name":"EmmaBostian","user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Sat
+        May 09 09:14:04 +0000 2020","id":1259048982908751872,"id_str":"1259048982908751872","text":"RT
+        @ania_kubow: If you want to learn about 5 dragging events -&gt; ''dragstart'',
+        ''dragover'', ''dragenter'', dragend'' and ''drop'', I have a section\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"ania_kubow","name":"Ania
+        Kub\u00f3w #JavaScriptGames","id":909815364846047232,"id_str":"909815364846047232","indices":[3,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sat
+        May 09 09:09:48 +0000 2020","id":1259047909636661249,"id_str":"1259047909636661249","text":"If
+        you want to learn about 5 dragging events -&gt; ''dragstart'', ''dragover'',
+        ''dragenter'', dragend'' and ''drop'', I have a\u2026 https:\/\/t.co\/xIFDSfhF5m","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/xIFDSfhF5m","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1259047909636661249","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[120,143]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":909815364846047232,"id_str":"909815364846047232","name":"Ania
+        Kub\u00f3w #JavaScriptGames","screen_name":"ania_kubow","location":"PLN UAE
+        SGP LDN","description":"Software Dev | I make #JavaScriptGames on my YouTube
+        + for Udemy \ud83e\udd18https:\/\/t.co\/mCd0PMxptI | Weekly coding tips partner:
+        https:\/\/t.co\/ItjW2muANY","url":"https:\/\/t.co\/OjIzilTV5L","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/OjIzilTV5L","expanded_url":"https:\/\/www.youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[0,23]}]},"description":{"urls":[{"url":"https:\/\/t.co\/mCd0PMxptI","expanded_url":"http:\/\/youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[66,89]},{"url":"https:\/\/t.co\/ItjW2muANY","expanded_url":"http:\/\/bit.ly\/JS-tips","display_url":"bit.ly\/JS-tips","indices":[120,143]}]}},"protected":false,"followers_count":27240,"friends_count":8122,"listed_count":306,"created_at":"Mon
+        Sep 18 16:24:21 +0000 2017","favourites_count":38969,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":2401,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/909815364846047232\/1609284776","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":48,"favorite_count":223,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":48,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Fri
+        May 08 17:48:52 +0000 2020","id":1258816151418740736,"id_str":"1258816151418740736","text":"RT
+        @dhh: Awesome to see the fantastic response to our Rails May of WTFs on the
+        new forum! Lots of great ideas and concerns. \u2764\ufe0f https:\/\/t.co\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"dhh","name":"DHH","id":14561327,"id_str":"14561327","indices":[3,7]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Fri
+        May 08 16:55:20 +0000 2020","id":1258802677242163200,"id_str":"1258802677242163200","text":"Awesome
+        to see the fantastic response to our Rails May of WTFs on the new forum! Lots
+        of great ideas and concerns.\u2026 https:\/\/t.co\/0ESSEXYguE","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/0ESSEXYguE","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1258802677242163200","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[116,139]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":14561327,"id_str":"14561327","name":"DHH","screen_name":"dhh","location":"","description":"Creator
+        of Ruby on Rails, Founder & CTO at Basecamp & HEY, NYT best-selling author,
+        and Le Mans 24h class-winning racing driver. No DMs, email: david@hey.com.","url":"https:\/\/t.co\/472m0izAJh","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/472m0izAJh","expanded_url":"https:\/\/dhh.dk","display_url":"dhh.dk","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":436886,"friends_count":153,"listed_count":10431,"created_at":"Sun
+        Apr 27 20:19:25 +0000 2008","favourites_count":18503,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":true,"statuses_count":56223,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/975876868455809024\/eK7mDppU_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/975876868455809024\/eK7mDppU_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/14561327\/1592255772","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":11,"favorite_count":73,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":11,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        May 07 21:38:44 +0000 2020","id":1258511611796447233,"id_str":"1258511611796447233","text":"RT
+        @ania_kubow: AAAAAAAH It''s OUT! I am SO SO SO happy to share this walkthrough
+        with you! In it, we practise over 15 inbuilt methods, how\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"ania_kubow","name":"Ania
+        Kub\u00f3w #JavaScriptGames","id":909815364846047232,"id_str":"909815364846047232","indices":[3,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Thu
+        May 07 13:52:33 +0000 2020","id":1258394292252553216,"id_str":"1258394292252553216","text":"AAAAAAAH
+        It''s OUT! I am SO SO SO happy to share this walkthrough with you! In it,
+        we practise over 15 inbuilt metho\u2026 https:\/\/t.co\/SREeHn97L5","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/SREeHn97L5","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1258394292252553216","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":909815364846047232,"id_str":"909815364846047232","name":"Ania
+        Kub\u00f3w #JavaScriptGames","screen_name":"ania_kubow","location":"PLN UAE
+        SGP LDN","description":"Software Dev | I make #JavaScriptGames on my YouTube
+        + for Udemy \ud83e\udd18https:\/\/t.co\/mCd0PMxptI | Weekly coding tips partner:
+        https:\/\/t.co\/ItjW2muANY","url":"https:\/\/t.co\/OjIzilTV5L","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/OjIzilTV5L","expanded_url":"https:\/\/www.youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[0,23]}]},"description":{"urls":[{"url":"https:\/\/t.co\/mCd0PMxptI","expanded_url":"http:\/\/youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[66,89]},{"url":"https:\/\/t.co\/ItjW2muANY","expanded_url":"http:\/\/bit.ly\/JS-tips","display_url":"bit.ly\/JS-tips","indices":[120,143]}]}},"protected":false,"followers_count":27240,"friends_count":8122,"listed_count":306,"created_at":"Mon
+        Sep 18 16:24:21 +0000 2017","favourites_count":38969,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":2401,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/909815364846047232\/1609284776","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":103,"favorite_count":610,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":103,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Thu
+        May 07 18:56:15 +0000 2020","id":1258470720771784705,"id_str":"1258470720771784705","text":"Day
+        7-8 \/ #100DaysOfCode \nContd book review app. Made good progress today. Implemented
+        error validation on forms, c\u2026 https:\/\/t.co\/0DLgoViepi","truncated":true,"entities":{"hashtags":[{"text":"100DaysOfCode","indices":[10,24]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/0DLgoViepi","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1258470720771784705","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":6,"favorite_count":2,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Tue
+        May 05 18:36:58 +0000 2020","id":1257741090427269120,"id_str":"1257741090427269120","text":"Day
+        7 \/ #100DaysOfCode \nContd book review app. Created a delete modal where
+        admins can delete a book category. I al\u2026 https:\/\/t.co\/3RT212ShJW","truncated":true,"entities":{"hashtags":[{"text":"100DaysOfCode","indices":[8,22]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/3RT212ShJW","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1257741090427269120","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":4,"favorite_count":6,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Mon
+        May 04 18:39:23 +0000 2020","id":1257379310475923459,"id_str":"1257379310475923459","text":"Day
+        5-6 \/ #100DaysOfCode \nContd of book review app. Fixed a couple of auth bugs,
+        especially the one where the local\u2026 https:\/\/t.co\/giqut9CILE","truncated":true,"entities":{"hashtags":[{"text":"100DaysOfCode","indices":[10,24]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/giqut9CILE","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1257379310475923459","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":5,"favorite_count":5,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Sun
+        May 03 08:49:12 +0000 2020","id":1256868397372981248,"id_str":"1256868397372981248","text":"RT
+        @ania_kubow: Today I published ''JavaScript Variables Explained. Var, Let
+        and Const with examples'' Like many other programming languages,\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"ania_kubow","name":"Ania
+        Kub\u00f3w #JavaScriptGames","id":909815364846047232,"id_str":"909815364846047232","indices":[3,14]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sun
+        May 03 08:18:36 +0000 2020","id":1256860700191965190,"id_str":"1256860700191965190","text":"Today
+        I published ''JavaScript Variables Explained. Var, Let and Const with examples''
+        Like many other programming la\u2026 https:\/\/t.co\/TajhARmcjX","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/TajhARmcjX","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1256860700191965190","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":909815364846047232,"id_str":"909815364846047232","name":"Ania
+        Kub\u00f3w #JavaScriptGames","screen_name":"ania_kubow","location":"PLN UAE
+        SGP LDN","description":"Software Dev | I make #JavaScriptGames on my YouTube
+        + for Udemy \ud83e\udd18https:\/\/t.co\/mCd0PMxptI | Weekly coding tips partner:
+        https:\/\/t.co\/ItjW2muANY","url":"https:\/\/t.co\/OjIzilTV5L","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/OjIzilTV5L","expanded_url":"https:\/\/www.youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[0,23]}]},"description":{"urls":[{"url":"https:\/\/t.co\/mCd0PMxptI","expanded_url":"http:\/\/youtube.com\/aniakubow","display_url":"youtube.com\/aniakubow","indices":[66,89]},{"url":"https:\/\/t.co\/ItjW2muANY","expanded_url":"http:\/\/bit.ly\/JS-tips","display_url":"bit.ly\/JS-tips","indices":[120,143]}]}},"protected":false,"followers_count":27240,"friends_count":8122,"listed_count":306,"created_at":"Mon
+        Sep 18 16:24:21 +0000 2017","favourites_count":38969,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":2401,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1340988467417927682\/ifHWLY9C_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/909815364846047232\/1609284776","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":50,"favorite_count":314,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":50,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Sat
+        May 02 19:04:54 +0000 2020","id":1256660957448802305,"id_str":"1256660957448802305","text":"RT
+        @traversymedia: Some messed up stuff.. If someone makes a video about your
+        shitty practices, make another video countering their points,\u2026","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"traversymedia","name":"Brad
+        Traversy","id":870038005,"id_str":"870038005","indices":[3,17]}],"urls":[]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter
+        for Android\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":828657908611239936,"id_str":"828657908611239936","name":"Abeid
+        Ahmed","screen_name":"iamhawaabi","location":"India","description":"JavaScript
+        and ruby enthusiast. Life long learner.","url":"https:\/\/t.co\/NSp0ih3aeF","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/NSp0ih3aeF","expanded_url":"https:\/\/stylish-vscode.vercel.app\/","display_url":"stylish-vscode.vercel.app","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":18,"friends_count":50,"listed_count":1,"created_at":"Mon
+        Feb 06 17:33:35 +0000 2017","favourites_count":303,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":45,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1148675429458300928\/XXc3bojz_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sat
+        May 02 18:42:18 +0000 2020","id":1256655269540610052,"id_str":"1256655269540610052","text":"Some
+        messed up stuff.. If someone makes a video about your shitty practices, make
+        another video countering their po\u2026 https:\/\/t.co\/9eNFCmpUD5","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/9eNFCmpUD5","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1256655269540610052","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":870038005,"id_str":"870038005","name":"Brad
+        Traversy","screen_name":"traversymedia","location":"Massachusetts","description":"Full
+        stack web developer and online educator (YouTube & Udemy)","url":"https:\/\/t.co\/W4bpU7VU2X","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/W4bpU7VU2X","expanded_url":"http:\/\/www.traversymedia.com","display_url":"traversymedia.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":116925,"friends_count":346,"listed_count":908,"created_at":"Tue
+        Oct 09 14:56:15 +0000 2012","favourites_count":6869,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":4184,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/856983737426423809\/6jebtwP-_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/856983737426423809\/6jebtwP-_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/870038005\/1493155991","profile_link_color":"1B95E0","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":true,"quoted_status_id":1255608468859506690,"quoted_status_id_str":"1255608468859506690","quoted_status":{"created_at":"Wed
+        Apr 29 21:22:41 +0000 2020","id":1255608468859506690,"id_str":"1255608468859506690","text":"\ud83d\udea8
+        @TeamYouTube your systems are being abused to dox creators. \n\nTechlead (723K
+        subscribers) and Matt Tran (436K sub\u2026 https:\/\/t.co\/bEC1a1pfoi","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"TeamYouTube","name":"TeamYouTube","id":3031071234,"id_str":"3031071234","indices":[2,14]}],"urls":[{"url":"https:\/\/t.co\/bEC1a1pfoi","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/1255608468859506690","display_url":"twitter.com\/i\/web\/status\/1\u2026","indices":[117,140]}]},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Web App\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":915613265748795394,"id_str":"915613265748795394","name":"Coffeezilla","screen_name":"coffeebreak_YT","location":"Texas,
+        USA","description":"I\u2019m a 20-something who makes videos about scammers
+        and why you should avoid them. Jazz Piano. Coffee Break. Follower of Jesus.","url":"https:\/\/t.co\/4DvvTb2S5S","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/4DvvTb2S5S","expanded_url":"https:\/\/www.youtube.com\/channel\/UCFQMnBA3CS502aghlcr0_aw?view_as=subscriber","display_url":"youtube.com\/channel\/UCFQMn\u2026","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":8606,"friends_count":1027,"listed_count":26,"created_at":"Wed
+        Oct 04 16:23:08 +0000 2017","favourites_count":1654,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":949,"lang":null,"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1296855485778403330\/5pYi18z0_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1296855485778403330\/5pYi18z0_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/915613265748795394\/1598029506","profile_link_color":"8B4513","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":416,"favorite_count":2444,"favorited":false,"retweeted":false,"lang":"en"},"retweet_count":77,"favorite_count":569,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"is_quote_status":true,"quoted_status_id":1255608468859506690,"quoted_status_id_str":"1255608468859506690","retweet_count":77,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+  recorded_at: Tue, 12 Jan 2021 14:11:53 GMT
+recorded_with: VCR 6.0.0
