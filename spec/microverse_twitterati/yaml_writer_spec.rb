@@ -45,6 +45,17 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
 
       expect(doc['blocked']).to match_array(['hello'])
     end
+
+    it 'does not initializes the file again' do
+      doc = MicroverseTwitterati::YamlWriter.new(
+        file_path,
+        type: 'blocked'
+      )
+      2.times { doc.write('user 2') }
+      file = YAML.load_file(file_path)
+
+      expect(file['blocked']).to match_array(['user 2', 'user 2'])
+    end
   end
 
   describe '#read' do
@@ -56,6 +67,14 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
       writer.write('hello')
 
       expect(writer.read).to eq(['hello'])
+    end
+  end
+
+  describe '#reset' do
+    it 'resets the entire file' do
+      writer.reset
+
+      expect(YAML.load_file(file_path)).to be_falsy
     end
   end
 end

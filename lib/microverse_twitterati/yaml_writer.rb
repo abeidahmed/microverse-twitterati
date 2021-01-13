@@ -3,14 +3,25 @@ module MicroverseTwitterati
     def initialize(file_path, type:)
       @file_path = file_path
       @type = type
-      File.new(file_path, 'w') unless File.exist?(file_path)
-      @doc = YAML.load_file(file_path)
     end
 
     def write(element)
-      init_doc
-      init_type
-      add_element(element)
+      File.new(file_path, 'w') unless File.exist?(file_path)
+
+      @doc = YAML.load_file(file_path)
+
+      # rubocop:disable Style/IdenticalConditionalBranches
+      if doc_initialized_with_type
+        add_element(element)
+      elsif doc_initialized_with_no_type
+        init_type
+        add_element(element)
+      else
+        init_doc
+        init_type
+        add_element(element)
+      end
+      # rubocop:enable Style/IdenticalConditionalBranches
 
       File.open(file_path, 'w') { |file| file.write @doc.to_yaml }
     end
@@ -20,7 +31,19 @@ module MicroverseTwitterati
       doc[type]
     end
 
+    def reset
+      File.open(file_path, 'w') { |file| file.truncate(0) }
+    end
+
     private
+
+    def doc_initialized_with_type
+      @doc && @doc[type]
+    end
+
+    def doc_initialized_with_no_type
+      @doc && !@doc[type]
+    end
 
     def init_doc
       @doc = {}
