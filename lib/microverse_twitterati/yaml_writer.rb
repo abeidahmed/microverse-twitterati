@@ -33,7 +33,6 @@ module MicroverseTwitterati
       return @doc[type] if doc_initialized_with_type
 
       # rubocop:disable Style/IdenticalConditionalBranches
-      # This logic needs to happen for the writer to work properly
       if doc_initialized_with_no_type
         init_type
       else
