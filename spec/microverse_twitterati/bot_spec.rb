@@ -80,4 +80,12 @@ RSpec.describe MicroverseTwitterati::Bot do
       end
     end
   end
+
+  describe '#update_blocked_users' do
+    it 'should return true nomatter the result' do
+      VCR.use_cassette('update_blocked_users') do
+        expect(bot.update_blocked_users).to be_truthy
+      end
+    end
+  end
 end

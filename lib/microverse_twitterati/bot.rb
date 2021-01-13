@@ -38,15 +38,6 @@ module MicroverseTwitterati
       abort 'There seems to be a connection problem.'
     end
 
-    def process_tweets_for(search_results)
-      tweets = []
-      search_results.each do |tweet|
-        tweets << tweet unless blocked?(tweet.user)
-      end
-
-      tweets
-    end
-
     def syndicate_for(tweets)
       tweets.each { |tweet| retweet(extract_id(tweet)) }
     end
@@ -57,6 +48,15 @@ module MicroverseTwitterati
     end
 
     private
+
+    def process_tweets_for(search_results)
+      tweets = []
+      search_results.each do |tweet|
+        tweets << tweet unless blocked?(tweet.user)
+      end
+
+      tweets
+    end
 
     def blocked?(user)
       BlockedUser.new.blocked_users.include?(user.id)
