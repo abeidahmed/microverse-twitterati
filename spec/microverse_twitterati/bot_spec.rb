@@ -2,6 +2,7 @@ require_relative '../spec_helper'
 require './lib/microverse_twitterati/errors'
 require './lib/microverse_twitterati/bot'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe MicroverseTwitterati::Bot do
   let(:api_settings) do
     {
@@ -89,3 +90,4 @@ RSpec.describe MicroverseTwitterati::Bot do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength

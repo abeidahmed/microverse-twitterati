@@ -1,6 +1,7 @@
 require_relative '../spec_helper'
 require './lib/microverse_twitterati/yaml_writer'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe MicroverseTwitterati::YamlWriter do
   file_path = 'config/helloworld.yml'.freeze
 
@@ -78,3 +79,4 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
