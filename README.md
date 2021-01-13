@@ -6,14 +6,11 @@
 This project was done as a part of the `ruby` capstone
 project. It is a command line bot that when run, iterates through the
 tweets that are hash tagged with `#microverse` and retweets them in
-order.
+order. The bot can be found at [twitter](https://twitter.com/MicroverseB).
+Please follow the bot if possible. Cheers!
 
 ## Built with
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
-
-## Twitter bot
-The bot can be found at [twitter](https://twitter.com/MicroverseB).
-Please follow the bot if possible. Cheers!
 
 ## Features
 ### Optimizations
