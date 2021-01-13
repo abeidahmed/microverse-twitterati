@@ -25,6 +25,7 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
     before do
       File.open(file_path, 'w') { |file| file.truncate(0) }
     end
+
     it 'creates a new file if the file is not present' do
       writer.write('hello')
 
@@ -43,17 +44,6 @@ RSpec.describe MicroverseTwitterati::YamlWriter do
       doc = YAML.load_file(file_path)
 
       expect(doc['blocked']).to match_array(['hello'])
-    end
-
-    it 'does not initializes the file again' do
-      doc = MicroverseTwitterati::YamlWriter.new(
-        file_path,
-        type: 'blocked'
-      )
-      2.times { doc.write('user 2') }
-      file = YAML.load_file(file_path)
-
-      expect(file['blocked']).to match_array(['user 2', 'user 2'])
     end
   end
 
